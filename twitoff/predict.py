@@ -5,7 +5,7 @@ from .models import User
 from .twitter import vectorize_tweet
 
 def predict_user(user0_username, user1_username, hypo_tweet_text):
-    # grab the users from DB
+    ''' grab the users from DB'''
     user0 = User.query.filter(User.username==user0_username).one()
     user1 = User.query.filter(User.username==user1_username).one()
 
