@@ -4,6 +4,7 @@ from .twitter2 import add_or_update_user
 from .predict_2 import predict_user
 
 def create_app():
+    '''This is the main app function'''
     app = Flask(__name__)
    
 
